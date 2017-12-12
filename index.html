@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>My first three.js app</title>
+	<style>
+		body { margin: 0; background-image:url("stars.jpg"); overflow:hidden}
+		canvas { width: 100%; height: 100%; }
+		#info {
+			position: absolute;
+			color:white;
+			top: 10px;
+			width: 100%;
+			text-align: center;
+			z-index: 100;
+			display:block;
+		}
+		#score {
+			color:white;
+		}
+	</style>
+</head>
+<body >
+	<script src="three.js"></script>
+	<script src="render.js"></script>
+	<div id="info">(Missile Hit +1, Spaceship Hit +10, City/Turret Hit -2, Ground Hit -1) Score: <span id="score"></span> Level: <span id="level"></span> Number of missiles: <span id="missile"></span></div>
+</body>
+</html>
